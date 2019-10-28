@@ -1,0 +1,4 @@
+factfut.c
+factfut.h
+*.so
+node_modules
