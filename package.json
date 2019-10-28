@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "futhark c --library factfut.fut && gcc factfut.c -o libfactfut.so -fPIC -shared"
+    "build": "futhark cuda --library factfut.fut && gcc factfut.c -o libfactfut.so -fPIC -shared -lcuda -lnvrtc -I/opt/cuda/include -L/opt/cuda/lib64"
   },
   "author": "",
   "license": "ISC",
